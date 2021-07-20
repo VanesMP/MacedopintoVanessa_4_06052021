@@ -248,7 +248,7 @@ function validate() {
         alert("Merci! Votre inscription a été envoyée.");
     } else {
         event.preventDefault();
-        alert("Veillez à remplir tous les champs de ce formulaire!");
+        alert(" Le message n'a pas été envoyé car vous n'avez probablement pas saisis correctement tout les champs !");
     }
 
 }
