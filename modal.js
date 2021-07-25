@@ -239,7 +239,7 @@ function closeMessagCondition() {
 //2: pour ne pas executé deux fois TOUT le code de la methode vu que le resultat est deja recuperable au premier appel.
 
 function validate() {
-
+    event.preventDefault();
     var resultFirst = checkValidityFirst();
     var resultLast = checkValidityLast();
     var resultMail = checkValidityMail();
@@ -251,7 +251,7 @@ function validate() {
         alert("Merci! Votre inscription a été envoyée.");
     } else {
         alert(" Le message n'a pas été envoyé car vous n'avez probablement pas saisis correctement tout les champs !");
-        event.preventDefault();
+
     }
 
 }
