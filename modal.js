@@ -232,8 +232,11 @@ function launchMessageCondition() {
 function closeMessagCondition() {
     checkCondition.style.display = "none";
 }
-//TODO.4 = Ajouter confirmation quand envoie réussi : pour envoyer le formulaire verifier que ts les elements revoient true si oui aficher message alert Bravo sinon false avec alert message erreur  
-//Utilisation des variables pour les resultats (boolean true, false) des méthodes car 1: checker tous les elements sans qu au premier false les check s' arrete. 2: pour ne pas executé deux fois TOUT le code de la methode vu que le resultat est deja recuperable au premier appel.
+//TODO.4 = Ajouter confirmation quand envoie réussi : pour envoyer le formulaire verifier que ts les elements revoient true 
+//si oui aficher message alert Bravo sinon false avec alert message erreur  
+//Utilisation des variables pour les resultats (boolean true, false) des méthodes 
+//car 1: checker tous les elements sans qu au premier false les check s' arrete. 
+//2: pour ne pas executé deux fois TOUT le code de la methode vu que le resultat est deja recuperable au premier appel.
 
 function validate() {
 
@@ -247,8 +250,8 @@ function validate() {
     if (resultFirst === true && resultLast === true && resultMail === true && resultBirthDate === true && resultQuantity === true && resultRadio === true && resultCondition === true) {
         alert("Merci! Votre inscription a été envoyée.");
     } else {
-        event.preventDefault();
         alert(" Le message n'a pas été envoyé car vous n'avez probablement pas saisis correctement tout les champs !");
+        event.preventDefault();
     }
 
 }
